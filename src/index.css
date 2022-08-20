@@ -5,6 +5,60 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: var(--color-font);
+}
+
+
+body {
+  --color-background: #fff;
+  --color-font: #444452;
+  --color-border: #cbd5e0;
+  --color-border-2: #2d3748;
+  --color-active: #ebe9ef;
+  --color-tertiary: #523399;
+
+  /* same for both */
+  --primary-color-1: #F38375;
+  --primary-color-2: #523399;
+}
+
+/* Dark theme colors */
+body.dark {
+  --color-background: #011627;
+  --color-font: #d6d6d6;
+  --color-border: #2d3748;
+  --color-border-2: #cbd5e0;
+  --color-active: #232933;
+  --color-tertiary: #20bccc;
+  --color-white: #fff;
+  --color-font-2: #444452;
+}
+
+/* Styles for users who prefer dark mode at the OS level */
+@media (prefers-color-scheme: dark) {
+
+  /* defaults to dark theme */
+  body {
+    --color-background: #011627;
+    --color-font: #afafbf;
+    --color-border: #2d3748;
+    --color-border-2: #cbd5e0;
+    --color-active: #232933;
+    --color-tertiary: #20bccc;
+    --color-white: #fff;
+    --color-font-2: #444452;
+  }
+
+  /* Override dark mode with light mode styles if the user decides to swap */
+  body.light {
+    --color-background: #fff;
+    --color-font: #444452;
+    --color-border: #cbd5e0;
+    --color-border-2: #2d3748;
+    --color-active: #ebe9ef;
+    --color-tertiary: #523399;
+  }
 }
 
 code {
