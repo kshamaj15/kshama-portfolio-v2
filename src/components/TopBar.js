@@ -33,7 +33,7 @@ const TopBar = () => {
         )
     }
     return (
-        <>
+        <div className='top-container'>
             <img src='/logo.png' height='70px' alt='logo' />
             <nav className='nav-bar'>
                 <ul>
@@ -45,7 +45,7 @@ const TopBar = () => {
                 </ul>
             </nav>
             {getToggle()}
-        </>
+        </div>
     )
 }
 

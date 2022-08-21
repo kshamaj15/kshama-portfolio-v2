@@ -21,7 +21,10 @@ const App = () => {
       {loading ? <div id="loading"></div> :
         <div className="container">
           <TopBar />
-          <div>
+          <div className='home-page'>
+            Hi, I am
+            <div>Kshama Jain</div>
+            I'm a Software Engineer with more than 4 years of experience in designing and developing large scale web applications with React, JavaScript, TypeScipt, Node JS. 
           </div>
           <div>
 
