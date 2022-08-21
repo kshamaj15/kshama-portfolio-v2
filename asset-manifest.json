@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kshama-portfolio-v2/static/css/main.73e64a2c.css",
-    "main.js": "/kshama-portfolio-v2/static/js/main.50f6bac6.js",
+    "main.css": "/kshama-portfolio-v2/static/css/main.6d2e399d.css",
+    "main.js": "/kshama-portfolio-v2/static/js/main.51a3e897.js",
     "static/js/787.3727667d.chunk.js": "/kshama-portfolio-v2/static/js/787.3727667d.chunk.js",
     "static/media/logo.gif": "/kshama-portfolio-v2/static/media/logo.dfcf469133ac59993dcd.gif",
     "index.html": "/kshama-portfolio-v2/index.html",
@@ -9,12 +9,12 @@
     "static/media/sun.svg": "/kshama-portfolio-v2/static/media/sun.12092d9c8214b71b6f2e.svg",
     "static/media/moon-white.svg": "/kshama-portfolio-v2/static/media/moon-white.741feb84691f8eab7efa.svg",
     "static/media/moon.svg": "/kshama-portfolio-v2/static/media/moon.098d29360adda434c1fe.svg",
-    "main.73e64a2c.css.map": "/kshama-portfolio-v2/static/css/main.73e64a2c.css.map",
-    "main.50f6bac6.js.map": "/kshama-portfolio-v2/static/js/main.50f6bac6.js.map",
+    "main.6d2e399d.css.map": "/kshama-portfolio-v2/static/css/main.6d2e399d.css.map",
+    "main.51a3e897.js.map": "/kshama-portfolio-v2/static/js/main.51a3e897.js.map",
     "787.3727667d.chunk.js.map": "/kshama-portfolio-v2/static/js/787.3727667d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73e64a2c.css",
-    "static/js/main.50f6bac6.js"
+    "static/css/main.6d2e399d.css",
+    "static/js/main.51a3e897.js"
   ]
 }
