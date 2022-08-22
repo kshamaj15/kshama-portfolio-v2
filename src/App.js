@@ -21,14 +21,16 @@ const App = () => {
       {loading ? <div id="loading"></div> :
         <div className="container">
           <TopBar />
-          <div className='home-page'>
-            Hi, I am
-            <div>Kshama Jain</div>
-            I'm a Software Engineer with more than 4 years of experience in designing and developing large scale web applications with React, JavaScript, TypeScipt, Node JS. 
-          </div>
-          <div>
+          <main>
+            <section className='home-page'>
+              <p className='my-details'> Hi, I am</p>
+              <h1 className='my-name'>Kshama Jain</h1>
+              <p className='my-details'>I'm a Software Engineer with more than 4 years of experience in designing and developing large scale web applications with React, JavaScript, TypeScipt, Node JS. </p>
+            </section>
+            <section>
 
-          </div>
+            </section>
+          </main>
         </div>}
     </>
   );
