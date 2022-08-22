@@ -83,6 +83,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap-reverse;
+  gap: 1rem;
 }
 
 .highlight {
@@ -91,4 +92,5 @@
 
 .about {
   height: calc(100vh - 300px);
+  padding: 5rem 0;
 }

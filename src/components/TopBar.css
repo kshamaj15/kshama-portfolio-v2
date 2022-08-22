@@ -25,6 +25,8 @@
   background-color: var(--color-background);
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 
 
@@ -112,9 +114,4 @@ input:checked+.slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
-}
-
-.scrollspy {
-  position: sticky;
-  top: 0;
 }
