@@ -18,7 +18,8 @@ const App = () => {
 
   return (
     <>
-      {loading ? <div id="loading"></div> :
+    <h1>Development Is In Progress</h1>
+      {/* {loading ? <div id="loading"></div> :
         <div className="container">
           <TopBar />
           <main>
@@ -41,7 +42,7 @@ const App = () => {
               </div>
             </section>
           </main>
-        </div>}
+        </div>} */}
     </>
   );
 }
