@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Scrollspy from 'react-scrollspy';
 
 import './TopBar.css';
 import { THEME } from '../constant';
@@ -36,13 +37,14 @@ const TopBar = () => {
         <header className='top-container'>
             <img src='/logo.png' height='70px' alt='logo' />
             <nav className='nav-bar'>
-                <ul>
-                    <li><a href="sa">About</a></li>
-                    <li><a href="ds">Work</a></li>
-                    <li><a href="sa">Skills</a></li>
-                    <li><a href="sa">Projects</a></li>
-                    <li><a href="sa">Get In Touch</a></li>
-                </ul>
+                <Scrollspy className="scrollspy" items={['intro', 'projects', 'work-exp', 'skills', 'education', 'contact']} currentClassName="active">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Personal Projects</a></li>
+                    <li><a href="#work-exp">Experience</a></li>
+                    <li><a href="#skills">Skillsets</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </Scrollspy>
             </nav>
             {getToggle()}
         </header>

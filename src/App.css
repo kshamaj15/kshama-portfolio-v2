@@ -1,5 +1,11 @@
 .container {
   padding: 20px;
+  position: relative;
+}
+
+.main-container {
+  width: max(80%, 360px);
+  margin: auto;
 }
 
 #loading {
@@ -16,14 +22,15 @@
 .home-page {
   text-align: center;
   padding: 5rem 0;
+  height: calc(100vh - 300px);
 }
 
 .my-name {
   font-size: 60px;
   font-weight: 800;
   overflow: hidden;
-  white-space: nowrap; 
-  margin: 0 auto; 
+  white-space: nowrap;
+  margin: 0 auto;
   color: var(--color-font-solid);
   animation: typing 3.5s steps(40, end);
 }
@@ -39,6 +46,49 @@
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+.divider {
+  height: 0.5px;
+  width: 50%;
+  margin: auto;
+  box-sizing: border-box;
+  border-bottom: 0.5px dashed var(--color-font);
+}
+
+.my-photo-container {
+  height: 302px;
+  width: 302px;
+  border-radius: 302px;
+  padding: 4px;
+  border: 2px solid var(--primary-color-1);
+}
+
+.my-photo-container img {
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+  overflow: hidden;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.highlight {
+  color: var(--primary-color-1);
+}
+
+.about {
+  height: calc(100vh - 300px);
 }
