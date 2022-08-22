@@ -41,22 +41,22 @@
   }
   
   .sun {
-    background: url(../images/sun.svg) no-repeat center;
+    background: url(../assets/sun.svg) no-repeat center;
     background-size: 100%;
   }
   
   .dark .sun {
-    background: url(../images/sun-white.svg) no-repeat center;
+    background: url(../assets/sun-white.svg) no-repeat center;
     background-size: 100%;
   }
   
   .moon {
-    background: url(../images/moon.svg) no-repeat center;
+    background: url(../assets/moon.svg) no-repeat center;
     background-size: 100%;
   }
   
   .dark .moon {
-    background: url(../images/moon-white.svg) no-repeat center;
+    background: url(../assets/moon-white.svg) no-repeat center;
     background-size: 100%;
   }
   

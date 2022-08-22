@@ -3,7 +3,7 @@
 }
 
 #loading {
-  background: url('./images/logo.gif') no-repeat center center;
+  background: url('./assets/logo.gif') no-repeat center center;
   position: absolute;
   background-color: #011627;
   top: 0;
