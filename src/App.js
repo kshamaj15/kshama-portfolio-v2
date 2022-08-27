@@ -2,7 +2,10 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import './App.css';
 import TopBar from './components/TopBar';
 import { THEME } from './constant';
+import Contact from './sections/Contact';
+import Education from './sections/Education';
 import Experience from './sections/Experience';
+import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 
 const App = () => {
@@ -34,7 +37,7 @@ const App = () => {
             <div className='divider'></div>
 
             <section className='about full-height' id='about'>
-              <h1>More About Me</h1>
+              <h1 className='heading'>More About Me</h1>
               <div className='d-flex'>
                 <article>
                   <p>I'm a Software Engineer. I was born in 1996 and grew up in Sagar, Madhya Pradesh (India)</p>
@@ -56,6 +59,18 @@ const App = () => {
             <div className='divider'></div>
 
             <Skills />
+
+            {/* <div className='divider'></div>
+
+            <Projects /> */}
+
+            {/* <div className='education'></div>
+
+            <Education /> */}
+
+            <div className='divider'></div>
+
+            <Contact />
 
           </main>
         </div>}

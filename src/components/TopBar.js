@@ -51,8 +51,8 @@ const TopBar = () => {
                         <li><a href="#about">About</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#skills">Skillsets</a></li>
-                        <li><a href="#projects">Personal Projects</a></li>
-                        <li><a href="#education">Education</a></li>
+                        {/* <li><a href="#projects">Personal Projects</a></li>
+                        <li><a href="#education">Education</a></li> */}
                         <li><a href="#contact">Contact</a></li>
                     </Scrollspy>
                 </div>

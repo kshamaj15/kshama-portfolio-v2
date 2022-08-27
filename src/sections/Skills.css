@@ -3,7 +3,7 @@
 }
 
 .tab-skills-list {
-    padding: 50px;
+    /* padding: 50px; */
     justify-content: space-around;
 
 }
@@ -11,7 +11,7 @@
 .tab-skills-list-item {
     display: flex;
     justify-content: space-between;
-    padding: 10px 100px;
+    padding: 10px;
 
 }
 

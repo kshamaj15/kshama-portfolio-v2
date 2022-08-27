@@ -32,11 +32,11 @@ const skillData = [
     // { name: 'Express', expertise: '5', image: express, color: '#000'}
 ]
 
-const Skills = () => {
+const Projects = () => {
 
     return (
         <section className='full-height tab-skills' id='skills'>
-            <h1 className='heading'>Skills</h1>
+            <h1 className='heading'>Projects</h1>
             <div className='tab-skills-list'>
                 {skillData.map((skill, i) => {
                     return (
@@ -57,4 +57,4 @@ const Skills = () => {
     )
 }
 
-export default Skills;
+export default Projects;

@@ -1,0 +1,17 @@
+.contact {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.get-in-touch {
+    font-size: 50px;
+    margin-top: 0;
+}

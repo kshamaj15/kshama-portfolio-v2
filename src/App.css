@@ -91,11 +91,20 @@
 }
 
 .about {
-  height: calc(100vh - 300px);
+  height: calc(100vh - 200px);
   padding: 5rem 0;
 }
 
 .full-height {
-  height: calc(100vh - 300px);
-  padding: 5rem 0;
+  height: calc(100vh - 200px);
+  padding-top: 6rem !important;
+}
+
+.heading::before {
+  /* content: '->'; */
+  content: "▹";
+  /* position: absolute; */
+  /* left: 12px; */
+  padding-right: 20px;
+  color: var(--primary-color-1);
 }

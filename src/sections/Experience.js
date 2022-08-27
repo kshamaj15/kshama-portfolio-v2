@@ -41,7 +41,7 @@ const Experience = () => {
 
     return (
         <section className='full-height' id='experience'>
-            <h1>Experience</h1>
+            <h1 className='heading'>Experience</h1>
             <div className='d-flex-expi'>
                 <ul>
                     {Object.keys(data).map((company, index) => (<li

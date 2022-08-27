@@ -1,0 +1,14 @@
+button {
+    color: var(--primary-color-1);
+    background-color: transparent;
+    border: 2px solid var(--primary-color-1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button a {
+    color: var(--primary-color-1);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+}
