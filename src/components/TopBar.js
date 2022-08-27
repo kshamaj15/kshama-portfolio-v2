@@ -4,6 +4,7 @@ import Scrollspy from 'react-scrollspy';
 import './TopBar.css';
 import { THEME } from '../constant';
 import { getTheme, onThemeToggle } from '../Utils/theme-utils';
+import HamburgerMenu from './HamburgerMenu';
 
 const TopBar = () => {
 
@@ -36,16 +37,27 @@ const TopBar = () => {
     return (
         <header className='top-container'>
             <img src='/logo.png' height='70px' alt='logo' />
-            <nav className='nav-bar'>
-                <Scrollspy className="scrollspy" items={['intro', 'projects', 'work-exp', 'skills', 'education', 'contact']} currentClassName="active">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Personal Projects</a></li>
-                    <li><a href="#work-exp">Experience</a></li>
-                    <li><a href="#skills">Skillsets</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </Scrollspy>
+            <nav className='navbar'>
+                <div class="navbar-container container">
+
+                    <input type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <Scrollspy className="scrollspy menu-items" items={['intro', 'projects', 'work-exp', 'skills', 'education', 'contact']} currentClassName="active">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skillsets</a></li>
+                        <li><a href="#projects">Personal Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </Scrollspy>
+                </div>
             </nav>
+            {/* <HamburgerMenu /> */}
             {getToggle()}
         </header>
     )

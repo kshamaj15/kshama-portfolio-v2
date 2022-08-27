@@ -2,6 +2,8 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import './App.css';
 import TopBar from './components/TopBar';
 import { THEME } from './constant';
+import Experience from './sections/Experience';
+import Skills from './sections/Skills';
 
 const App = () => {
 
@@ -28,9 +30,10 @@ const App = () => {
               <h1 className='my-name'>Kshama Jain</h1>
               <p className='my-details'>I'm a Software Engineer with more than 4 years of experience in designing and developing large scale web applications with React, JavaScript, TypeScipt, Node JS. </p>
             </section>
+
             <div className='divider'></div>
 
-            <section className='about' id='about'>
+            <section className='about full-height' id='about'>
               <h1>More About Me</h1>
               <div className='d-flex'>
                 <article>
@@ -45,6 +48,14 @@ const App = () => {
                 </div>
               </div>
             </section>
+
+            <div className='divider'></div>
+
+            <Experience />
+
+            <div className='divider'></div>
+
+            <Skills />
 
           </main>
         </div>}
