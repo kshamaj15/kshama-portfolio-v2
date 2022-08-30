@@ -11,6 +11,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import HomePage from './sections/HomePage';
 import About from './sections/About';
+
+import { ReactComponent as GitLogo } from './assets/profilesLogo/git.svg';
+import { ReactComponent as LinkedInLogo } from './assets/profilesLogo/ln.svg';
+import { ReactComponent as InstaLogo } from './assets/profilesLogo/insta.svg';
+// import git from './assets/profilesLogo/github.png';
+
 // ..
 AOS.init({
   offset: 120, // offset (in px) from the original trigger point
@@ -37,34 +43,23 @@ const App = () => {
       {loading ? <div id="loading"></div> :
         <div className="container">
           <TopBar />
-          <main className='main-container'>
-            <HomePage />
-
-            <div className='divider'></div>
-
-            <About />
-
-            <div className='divider'></div>
-
-            <Experience />
-
-            <div className='divider'></div>
-
-            <Skills />
-
-            {/* <div className='divider'></div>
-
-            <Projects /> */}
-
-            {/* <div className='education'></div>
-
-            <Education /> */}
-
-            <div className='divider'></div>
-
-            <Contact />
-
-          </main>
+          <div className='playground'>
+            <div className='my-profiles'>
+              <a><GitLogo className='profile-logo' /></a>
+              <a><LinkedInLogo className='profile-logo' /></a>
+              <a><InstaLogo className='profile-logo' /></a>
+            </div>
+            <main className='main-container'>
+              <HomePage />
+              <About />
+              <Experience />
+              <Skills />
+              {/* <Projects />
+            <Education />  */}
+              <Contact />
+            </main>
+            <div className='email'>kshamaj150896@gmail.com</div>
+          </div>
         </div>}
     </>
   );

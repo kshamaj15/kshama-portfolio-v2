@@ -35,7 +35,7 @@ const skillData = [
 const Projects = () => {
 
     return (
-        <section className='full-height tab-skills' id='skills'>
+        <section className='full-height tab-skills' id='projects'>
             <h1 className='heading'>Projects</h1>
             <div className='tab-skills-list'>
                 {skillData.map((skill, i) => {

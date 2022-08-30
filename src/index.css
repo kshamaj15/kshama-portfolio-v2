@@ -21,6 +21,7 @@ body {
 
   /* same for both */
   --primary-color-1: hsl(285, 63%, 44%);
+  --primary-color-opacity: hsla(285, 63%, 44%, 0.3);
   --primary-color-2: hsl(258, 50%, 40%);
 }
 
@@ -37,6 +38,7 @@ body.dark {
   --color-font-2: hsl(240, 9%, 29%);
 
   --primary-color-1: hsl(7, 84%, 71%);
+  --primary-color-opacity: hsla(7, 84%, 71%, 0.3);
   --primary-color-2: hsl(258, 50%, 40%);
 }
 
@@ -56,6 +58,7 @@ body.dark {
     --color-font-2: hsl(240, 9%, 29%);
 
     --primary-color-1: hsl(7, 84%, 71%);
+    --primary-color-opacity: hsla(7, 84%, 71%, 0.3);
     --primary-color-2: hsl(258, 50%, 40%);
   }
 
@@ -70,6 +73,7 @@ body.dark {
     --color-tertiary: hsl(258, 50%, 40%);
 
     --primary-color-1: hsl(285, 63%, 44%);
+    --primary-color-opacity: hsla(285, 63%, 44%, 0.3);
     --primary-color-2: hsl(258, 50%, 40%);
   }
 }

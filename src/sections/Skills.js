@@ -35,30 +35,33 @@ const skillData = [
 const Skills = () => {
 
     return (
-        <section className='full-height tab-skills' id='skills' data-aos='zoom-in-right'>
-            <h1 className='heading'>Skills</h1>
-            <div className='tab-skills-list'>
-                {skillData.map((skill, i) => {
-                    return (
-                        <div className="tab-skills-list-item" key={i}>
-                            <div>
-                                <img src={skill.image} height="20px" className="pr-3" />
-                                {skill.name}</div>
-                            <div className="tab-skills-list-item-outer">
-                                <div
-                                    data-aos='zoom-in-right'
-                                    data-aos-offset='0'
-                                    data-aos-delay='0'
-                                    className="tab-skills-list-item-inner"
-                                    style={{ background: skill.color, width: `${skill.expertise * 10}%` }}>
-                                    <span>{skill.expertise} out of 10</span>
+        <div id='skills'>
+            <div className='divider'></div>
+            <section className='full-height tab-skills' data-aos='zoom-in-right'>
+                <h1 className='heading'>Skills</h1>
+                <div className='tab-skills-list'>
+                    {skillData.map((skill, i) => {
+                        return (
+                            <div className="tab-skills-list-item" key={i}>
+                                <div>
+                                    <img src={skill.image} height="20px" className="pr-3" />
+                                    {skill.name}</div>
+                                <div className="tab-skills-list-item-outer">
+                                    <div
+                                        data-aos='zoom-in-right'
+                                        data-aos-offset='0'
+                                        data-aos-delay='0'
+                                        className="tab-skills-list-item-inner"
+                                        style={{ background: skill.color, width: `${skill.expertise * 10}%` }}>
+                                        <span>{skill.expertise} out of 10</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                })}
-            </div>
-        </section>
+                        )
+                    })}
+                </div>
+            </section>
+        </div>
     )
 }
 

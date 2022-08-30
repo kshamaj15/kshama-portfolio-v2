@@ -36,26 +36,29 @@ const Experience = () => {
     const [selectedCompany, setSelectedCompany] = useState(Object.keys(data)[0]);
 
     return (
-        <section className='full-height pos-relative' id='experience' data-aos='zoom-in'>
-            <h1 className='heading'>Experience</h1>
-            <div className='d-flex-expi'>
-                <ul className='company-list'>
-                    {Object.keys(data).map((company, index) => (<li
-                        className={selectedCompany === company ? 'active-company company' : 'company'}
-                        onClick={() => setSelectedCompany(company)}
-                        key={index}>
-                        {data[company]?.companyName}
-                    </li>))}
-                </ul>
-                <ul className='points-list'>
-                    {data[selectedCompany]?.points.map((point, index) => (<li className='company-point'>
-                        {point}
-                    </li>))}
-                </ul>
-            </div>
-            <div>
-            </div>
-        </section>
+        <div id='experience'>
+            <div className='divider'></div>
+            <section className='full-height pos-relative' data-aos='zoom-in'>
+                <h1 className='heading'>Experience</h1>
+                <div className='d-flex-expi'>
+                    <ul className='company-list'>
+                        {Object.keys(data).map((company, index) => (<li
+                            className={selectedCompany === company ? 'active-company company' : 'company'}
+                            onClick={() => setSelectedCompany(company)}
+                            key={index}>
+                            {data[company]?.companyName}
+                        </li>))}
+                    </ul>
+                    <ul className='points-list'>
+                        {data[selectedCompany]?.points.map((point, index) => (<li className='company-point'>
+                            {point}
+                        </li>))}
+                    </ul>
+                </div>
+                <div>
+                </div>
+            </section>
+        </div>
     )
 }
 
