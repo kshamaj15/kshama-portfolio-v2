@@ -12,7 +12,7 @@ const Contact = () => {
     }
 
     return (
-        <section className='full-height contact' id='contact'>
+        <section className='full-height contact' id='contact' data-aos='zoom-in-down'>
             <div className='pos-abs'>
                 <p className='my-details'>If you want to work with me or just want to say hello then ...</p>
                 <h1 className='get-in-touch'>Get In Touch</h1>

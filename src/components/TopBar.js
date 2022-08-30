@@ -47,7 +47,7 @@ const TopBar = () => {
                         <span class="line line3"></span>
                     </div>
 
-                    <Scrollspy className="scrollspy menu-items" items={['intro', 'projects', 'work-exp', 'skills', 'education', 'contact']} currentClassName="active">
+                    <Scrollspy className="scrollspy menu-items" items={['about', 'experience', 'skills', 'education', 'contact']} currentClassName="active-menu">
                         <li><a href="#about">About</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#skills">Skillsets</a></li>

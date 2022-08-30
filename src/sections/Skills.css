@@ -26,8 +26,14 @@
     height: 22px;
     border-radius: 10px;
     opacity: 0.7;
-
+    /* animation: progress-bar 2s; */
 }
+
+/* @keyframes progress-bar {
+    0% {
+        width: 0;
+    }
+} */
 
 .tab-skills-list-item-inner span {
     color: #fff;

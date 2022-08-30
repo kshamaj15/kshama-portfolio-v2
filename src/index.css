@@ -11,30 +11,33 @@ body {
 
 
 body {
-  --color-background: #fff;
-  --color-font: #444452;
-  --color-font-solid: #000;
-  --color-border: #cbd5e0;
-  --color-border-2: #2d3748;
-  --color-active: #ebe9ef;
-  --color-tertiary: #523399;
+  --color-background: hsl(0, 0%, 100%);
+  --color-font: hsl(240, 9%, 29%);
+  --color-font-solid: hsl(0, 0%, 0%);
+  --color-border: hsl(211, 25%, 84%);
+  --color-border-2: hsl(218, 23%, 23%);
+  --color-active: hsl(260, 16%, 93%);
+  --color-tertiary: hsl(258, 50%, 40%);
 
   /* same for both */
-  --primary-color-1: #F38375;
-  --primary-color-2: #523399;
+  --primary-color-1: hsl(285, 63%, 44%);
+  --primary-color-2: hsl(258, 50%, 40%);
 }
 
 /* Dark theme colors */
 body.dark {
-  --color-background: #011627;
-  --color-font: #ccd6f6;
-  --color-font-solid: #fff;
-  --color-border: #2d3748;
-  --color-border-2: #cbd5e0;
-  --color-active: #232933;
-  --color-tertiary: #20bccc;
-  --color-white: #fff;
-  --color-font-2: #444452;
+  --color-background: hsl(207, 95%, 8%);
+  --color-font: hsl(226, 70%, 88%);
+  --color-font-solid: hsl(0, 0%, 100%);
+  --color-border: hsl(218, 23%, 23%);
+  --color-border-2: hsl(211, 25%, 84%);
+  --color-active: hsl(218, 19%, 17%);
+  --color-tertiary: hsl(186, 73%, 46%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-font-2: hsl(240, 9%, 29%);
+
+  --primary-color-1: hsl(7, 84%, 71%);
+  --primary-color-2: hsl(258, 50%, 40%);
 }
 
 /* Styles for users who prefer dark mode at the OS level */
@@ -42,26 +45,32 @@ body.dark {
 
   /* defaults to dark theme */
   body {
-    --color-background: #011627;
-    --color-font: #ccd6f6;
-    --color-font-solid: #fff;
-    --color-border: #2d3748;
-    --color-border-2: #cbd5e0;
-    --color-active: #232933;
-    --color-tertiary: #20bccc;
-    --color-white: #fff;
-    --color-font-2: #444452;
+    --color-background: hsl(207, 95%, 8%);
+    --color-font: hsl(226, 70%, 88%);
+    --color-font-solid: #ffffff;
+    --color-border: hsl(218, 23%, 23%);
+    --color-border-2: hsl(211, 25%, 84%);
+    --color-active: hsl(218, 19%, 17%);
+    --color-tertiary: hsl(186, 73%, 46%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-font-2: hsl(240, 9%, 29%);
+
+    --primary-color-1: hsl(7, 84%, 71%);
+    --primary-color-2: hsl(258, 50%, 40%);
   }
 
   /* Override dark mode with light mode styles if the user decides to swap */
   body.light {
-    --color-background: #fff;
-    --color-font: #444452;
-    --color-font-solid: #000;
-    --color-border: #cbd5e0;
-    --color-border-2: #2d3748;
-    --color-active: #ebe9ef;
-    --color-tertiary: #523399;
+    --color-background: hsl(0, 0%, 100%);
+    --color-font: hsl(240, 9%, 29%);
+    --color-font-solid: hsl(0, 0%, 0%);
+    --color-border: hsl(211, 25%, 84%);
+    --color-border-2: hsl(218, 23%, 23%);
+    --color-active: hsl(260, 16%, 93%);
+    --color-tertiary: hsl(258, 50%, 40%);
+
+    --primary-color-1: hsl(285, 63%, 44%);
+    --primary-color-2: hsl(258, 50%, 40%);
   }
 }
 

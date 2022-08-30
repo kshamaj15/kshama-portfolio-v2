@@ -40,7 +40,7 @@ const Experience = () => {
     const [selectedCompany, setSelectedCompany] = useState(Object.keys(data)[0]);
 
     return (
-        <section className='full-height' id='experience'>
+        <section className='full-height' id='experience' data-aos='zoom-in'>
             <h1 className='heading'>Experience</h1>
             <div className='d-flex-expi'>
                 <ul>
