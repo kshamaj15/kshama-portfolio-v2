@@ -20,8 +20,8 @@ import { ReactComponent as InstaLogo } from './assets/profilesLogo/insta.svg';
 // ..
 AOS.init({
   offset: 120, // offset (in px) from the original trigger point
-  delay: 200,
-  duration: 500, // values from 0 to 3000, with step 50ms
+  delay: 300,
+  duration: 800, // values from 0 to 3000, with step 50ms
   easing: 'ease',
 });
 

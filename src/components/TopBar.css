@@ -34,6 +34,8 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  width: 95%;
+  /* overflow-x: hidden; */
 }
 
 .active-menu {
@@ -140,11 +142,12 @@ input:checked+.slider:before {
 
   .navbar-container .hamburger-lines {
     /* display: block; */
+    cursor: pointer;
     height: 23px;
     width: 35px;
     position: absolute;
-    top: 17px;
-    left: 20px;
+    top: 0;
+    right: 0;
     z-index: 2;
     display: flex !important;
     flex-direction: column;
@@ -156,7 +159,7 @@ input:checked+.slider:before {
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: var(--co);
+    background: var(--primary-color-1);
   }
 
   .navbar-container .hamburger-lines .line1 {
@@ -178,8 +181,45 @@ input:checked+.slider:before {
     display: block;
   }
 
+  .switch-container {
+    /* order: 2; */
+    position: fixed;
+    left: 100px;
+  }
+
+  .navbar {
+    order: 3;
+  }
+
+  .navbar-container input[type="checkbox"]~.menu-items {
+    transform: rotateX(90deg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    top: 0;
+    position: absolute;
+    transition: transform 1s;
+
+  }
+
   .navbar-container input[type="checkbox"]:checked~.menu-items {
-    transform: translateX(0);
+    transform: rotateX(0) translateX(-100%);
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    top: 0;
+    position: absolute;
+    /* height: 100vh;
+    width: 50%; */
+    padding: 10px;
+    background-color: var(--color-border);
+    border-radius: 8px;
   }
 
   .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
@@ -199,34 +239,10 @@ input:checked+.slider:before {
     display: block;
     height: 32px;
     width: 30px;
-    top: 20px;
-    left: 20px;
+    top: 0;
+    right: 0;
     z-index: 5;
     opacity: 0;
   }
-
-  /* .navbar-container .hamburger-lines {
-    display: block;
-    height: 23px;
-    width: 35px;
-    position: absolute;
-    top: 17px;
-    left: 20px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  } */
-
-  /* .navbar-container input[type="checkbox"],
-  .navbar-container .hamburger-lines {
-    display: block;
-  } */
-
-  /* .navbar-container {
-    display: block;
-    position: relative;
-    height: 64px;
-  } */
 
 }
