@@ -9,7 +9,7 @@ const About = () => {
         <section className='about full-height' id='about' data-aos='fade-out'>
             <h1 className='heading'>More About Me</h1>
             <div className='d-flex' data-aos='fade-out'>
-                <article>
+                <article className='px-1'>
                     <p>I'm a Software Engineer. I was born in 1996 and grew up in Sagar, Madhya Pradesh (India)</p>
                     <p>I have done my schooling from Sagar. I have graduated from <b className='highlight'>SGSITS Indore</b> in 2018</p>
                     <p>Since 2018 I am working as Software Engineer</p>
