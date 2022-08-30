@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.pos-relative {
+  position: relative;
+}
+
 .main-container {
   width: max(80%, 360px);
   margin: auto;

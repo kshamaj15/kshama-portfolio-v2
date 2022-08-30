@@ -6,31 +6,27 @@ const data = {
     recro_avataar: {
         companyName: 'Recro | Avataar',
         points: [
-            'recro_avataar 1',
-            'recro_avataar 2',
-            'recro_avataar 3',
-            'recro_avataar 4',
-            'recro_avataar 5',
+            'Developed screens for user management system for different roles and permissions, which consistes of addeding/updating new team, role wise dashboard view',
+            'Build screens for SignIn, Signup, User Invite system',
+            'Design and Developed common component for the new UI screens from Scratch',
+            'Tech Stack - React, Node JS, JavaScript, Zustand, HTML5, CSS, SCSS'
         ]
     },
     dew_solutions: {
         companyName: 'Dew Solutions',
         points: [
-            'dew_solutions 1',
-            'dew_solutions 2',
-            'dew_solutions 3',
-            'dew_solutions 4'
+            'Developed new components and modules as per client requirement',
+            'Implemented API caching for improve the application performance',
+            'Maintained reusable and scalable code for Hybrid Frontend application build on Angular\'s multiple version',
+            'Tech Stack - Angular, React, JavaScript, HTML5, CSS, SCSS'
         ]
     },
     wipro: {
         companyName: 'Wipro',
         points: [
-            'wipro 1',
-            'wipro 2',
-            'wipro 3',
-            'wipro 4',
-            'wipro 5',
-            'wipro 6'
+            'Consulted with clients to gather requirements and discuss design choices.',
+            'Designed and developed components to meet usability and requirement',
+            'Tech Stack - React, Redux, JavaScript, HTML5, CSS, SCSS, Bootstrap'
         ]
     }
 }
@@ -40,10 +36,10 @@ const Experience = () => {
     const [selectedCompany, setSelectedCompany] = useState(Object.keys(data)[0]);
 
     return (
-        <section className='full-height' id='experience' data-aos='zoom-in'>
+        <section className='full-height pos-relative' id='experience' data-aos='zoom-in'>
             <h1 className='heading'>Experience</h1>
             <div className='d-flex-expi'>
-                <ul>
+                <ul className='company-list'>
                     {Object.keys(data).map((company, index) => (<li
                         className={selectedCompany === company ? 'active-company company' : 'company'}
                         onClick={() => setSelectedCompany(company)}
@@ -51,7 +47,7 @@ const Experience = () => {
                         {data[company]?.companyName}
                     </li>))}
                 </ul>
-                <ul>
+                <ul className='points-list'>
                     {data[selectedCompany]?.points.map((point, index) => (<li className='company-point'>
                         {point}
                     </li>))}
