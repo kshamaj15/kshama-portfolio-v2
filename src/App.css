@@ -134,6 +134,8 @@
   font-family: monospace;
   font-size: 16px;
   cursor: pointer;
+  color: var(--color-font);
+  text-decoration: none;
   /* position: relative; */
 }
 
@@ -197,6 +199,10 @@ a:hover .profile-logo {
     transform: translateX(-50%);
     flex-direction: row;
     gap: 20px;
+    background-color: var(--color-background);
+    z-index: 1;
+    height: 50px;
+    width: 100%;
   }
 
   .my-profiles::after,

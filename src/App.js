@@ -45,9 +45,9 @@ const App = () => {
           <TopBar />
           <div className='playground'>
             <div className='my-profiles'>
-              <a><GitLogo className='profile-logo' /></a>
-              <a><LinkedInLogo className='profile-logo' /></a>
-              <a><InstaLogo className='profile-logo' /></a>
+              <a href='https://github.com/kshamaj15' target='_blank'><GitLogo className='profile-logo' /></a>
+              <a href='https://www.linkedin.com/in/kshamajain/' target='_blank'><LinkedInLogo className='profile-logo' /></a>
+              <a href='https://www.instagram.com/kshama__jain/' target='_blank'><InstaLogo className='profile-logo' /></a>
             </div>
             <main className='main-container'>
               <HomePage />
@@ -58,7 +58,7 @@ const App = () => {
             <Education />  */}
               <Contact />
             </main>
-            <div className='email'>kshamaj150896@gmail.com</div>
+            <a href='mailto:kshamaj150896@gmail.com' target='_blank' className='email'>kshamaj150896@gmail.com</a>
           </div>
         </div>}
     </>

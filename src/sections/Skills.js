@@ -42,7 +42,7 @@ const Skills = () => {
                 <div className='tab-skills-list'>
                     {skillData.map((skill, i) => {
                         return (
-                            <div className="tab-skills-list-item" key={i}>
+                            <div className="tab-skills-list-item" key={`i_${skill.name}`}>
                                 <div>
                                     <img src={skill.image} height="20px" className="pr-3" />
                                     {skill.name}</div>

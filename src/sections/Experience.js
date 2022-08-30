@@ -45,12 +45,12 @@ const Experience = () => {
                         {Object.keys(data).map((company, index) => (<li
                             className={selectedCompany === company ? 'active-company company' : 'company'}
                             onClick={() => setSelectedCompany(company)}
-                            key={index}>
+                            key={`${index}_${company}`}>
                             {data[company]?.companyName}
                         </li>))}
                     </ul>
                     <ul className='points-list'>
-                        {data[selectedCompany]?.points.map((point, index) => (<li className='company-point'>
+                        {data[selectedCompany]?.points.map((point, index) => (<li className='company-point' key={index}>
                             {point}
                         </li>))}
                     </ul>

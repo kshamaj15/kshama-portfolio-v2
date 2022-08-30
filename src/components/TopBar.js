@@ -38,13 +38,13 @@ const TopBar = () => {
         <header className='top-container'>
             <img src='/logo.png' height='70px' alt='logo' />
             <nav className='navbar'>
-                <div class="navbar-container container">
+                <div className="navbar-container container">
 
                     <input type="checkbox" name="" id="" />
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
+                    <div className="hamburger-lines">
+                        <span className="line line1"></span>
+                        <span className="line line2"></span>
+                        <span className="line line3"></span>
                     </div>
 
                     <Scrollspy className="scrollspy menu-items" items={['about', 'experience', 'skills', 'education', 'contact']} currentClassName="active-menu">
