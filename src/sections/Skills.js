@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 import react from '../assets/skillsLogo/react.jpg';
-import redux from '../assets/skillsLogo/redux.png';
+// import redux from '../assets/skillsLogo/redux.png';
 import angular from '../assets/skillsLogo/angular.png';
 import js from '../assets/skillsLogo/js.png';
 import html from '../assets/skillsLogo/html.png';
@@ -11,8 +11,8 @@ import bootstrap from '../assets/skillsLogo/bootstrap.png';
 import ts from '../assets/skillsLogo/typescript.png';
 import scss from '../assets/skillsLogo/scss.png';
 import jquery from '../assets/skillsLogo/jquery.png';
-import node from '../assets/skillsLogo/node.jpeg';
-import express from '../assets/skillsLogo/express.png';
+// import node from '../assets/skillsLogo/node.jpeg';
+// import express from '../assets/skillsLogo/express.png';
 
 import '../App.css';
 import './Skills.css';
@@ -42,9 +42,9 @@ const Skills = () => {
                 <div className='tab-skills-list'>
                     {skillData.map((skill, i) => {
                         return (
-                            <div className="tab-skills-list-item" key={`i_${skill.name}`}>
+                            <div className="tab-skills-list-item" key={`${i}_${skill.name}`}>
                                 <div>
-                                    <img src={skill.image} height="20px" className="pr-3" />
+                                    <img src={skill.image} height="20px" alt={skill.image} className="pr-3" />
                                     {skill.name}</div>
                                 <div className="tab-skills-list-item-outer">
                                     <div

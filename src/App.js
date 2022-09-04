@@ -1,11 +1,10 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import TopBar from './components/TopBar';
-import { THEME } from './constant';
 import Contact from './sections/Contact';
-import Education from './sections/Education';
+// import Education from './sections/Education';
 import Experience from './sections/Experience';
-import Projects from './sections/Projects';
+// import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -45,9 +44,9 @@ const App = () => {
           <TopBar />
           <div className='playground'>
             <div className='my-profiles'>
-              <a href='https://github.com/kshamaj15' target='_blank'><GitLogo className='profile-logo' /></a>
-              <a href='https://www.linkedin.com/in/kshamajain/' target='_blank'><LinkedInLogo className='profile-logo' /></a>
-              <a href='https://www.instagram.com/kshama__jain/' target='_blank'><InstaLogo className='profile-logo' /></a>
+              <a rel="noreferrer" href='https://github.com/kshamaj15' target='_blank'><GitLogo className='profile-logo' /></a>
+              <a rel="noreferrer" href='https://www.linkedin.com/in/kshamajain/' target='_blank'><LinkedInLogo className='profile-logo' /></a>
+              <a rel="noreferrer" href='https://www.instagram.com/kshama__jain/' target='_blank'><InstaLogo className='profile-logo' /></a>
             </div>
             <main className='main-container'>
               <HomePage />
@@ -58,7 +57,7 @@ const App = () => {
             <Education />  */}
               <Contact />
             </main>
-            <a href='mailto:kshamaj150896@gmail.com' target='_blank' className='email'>kshamaj150896@gmail.com</a>
+            <a rel="noreferrer" href='mailto:kshamaj150896@gmail.com' target='_blank' className='email'>kshamaj150896@gmail.com</a>
           </div>
         </div>}
     </>

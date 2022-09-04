@@ -6,11 +6,6 @@ import ButtonWrapper from '../components/ButtonWrapper';
 
 const Contact = () => {
 
-    const sentMail = () => {
-        const link = "mailto:me@example.com";
-        window.location.href = link;
-    }
-
     return (
         <div id='contact'>
             <div className='divider'></div>

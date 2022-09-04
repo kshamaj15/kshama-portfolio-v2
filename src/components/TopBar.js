@@ -4,7 +4,6 @@ import Scrollspy from 'react-scrollspy';
 import './TopBar.css';
 import { THEME } from '../constant';
 import { getTheme, onThemeToggle } from '../Utils/theme-utils';
-import HamburgerMenu from './HamburgerMenu';
 
 const TopBar = () => {
 
@@ -14,7 +13,7 @@ const TopBar = () => {
         if (theme === THEME.DARK) {
             onThemeToggle(true);
         }
-    }, [])
+    }, [theme])
 
     const handleTeamToggle = (e) => {
         const checked = e.target.checked;
