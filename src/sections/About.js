@@ -19,7 +19,7 @@ const About = () => {
                         <p>Other than my work, I love to read books, also learn about business and entrepreneurship</p>
                     </article>
                     <div className='my-photo-container' data-aos='zoom-in-up'>
-                        <img height='300px' width='300px' src='/myPhoto.JPG' alt='my-img' />
+                        <img height='300px' width='300px' src='/myPhoto.avif' alt='my-img' />
                     </div>
                 </div>
             </section>
