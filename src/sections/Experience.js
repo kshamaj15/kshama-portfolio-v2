@@ -3,6 +3,13 @@ import '../App.css';
 import './Experience.css';
 
 const data = {
+    cisco: {
+        companyName: 'Cisco | Appdynamics',
+        points: [
+            'Collaborated with UI/UX teams and changed product theme to Cisco standerd "Magnetic" theme',
+            'Worked on permance improvement of various section of frontend and improved the page load time upto 50%',
+        ]
+    },
     recro_avataar: {
         companyName: 'Recro | Avataar',
         points: [
