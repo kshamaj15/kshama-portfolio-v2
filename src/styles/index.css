@@ -1,0 +1,8 @@
+/**
+ * Main Stylesheet Entry Point
+ * Import order matters for CSS specificity
+ */
+
+@import './variables.css';
+@import './global.css';
+

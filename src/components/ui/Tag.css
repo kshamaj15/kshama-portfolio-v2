@@ -1,0 +1,41 @@
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+/* Sizes */
+.tag--small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+}
+
+.tag--medium {
+  padding: 0.375rem 0.75rem;
+}
+
+/* Variants */
+.tag--default {
+  background: rgba(var(--color-accent-rgb), 0.1);
+  color: var(--color-accent);
+}
+
+.tag--accent {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.tag--muted {
+  background: var(--color-border);
+  color: var(--color-text-muted);
+}
+
+/* Hover effect */
+.tag:hover {
+  transform: translateY(-1px);
+}
+

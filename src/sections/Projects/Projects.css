@@ -1,0 +1,118 @@
+.projects {
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.projects__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Project Card */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.project-card__icon {
+  color: var(--color-accent);
+}
+
+.project-card__links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.project-card__link {
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
+}
+
+.project-card__link:hover {
+  color: var(--color-accent);
+}
+
+.project-card__title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-strong);
+  margin: 0 0 0.75rem 0;
+  transition: color 0.2s ease;
+}
+
+.project-card:hover .project-card__title {
+  color: var(--color-accent);
+}
+
+.project-card__description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.project-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+/* Show More Button */
+.projects__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.projects__show-more {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 0.75rem 2rem;
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.projects__show-more:hover {
+  background: rgba(var(--color-accent-rgb), 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects {
+    padding: 4rem 1.5rem;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
