@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- K - Vertical left stroke -->
+  <path d="M25 15 L25 185 L38 185 L38 15 Z" fill="url(#grad-light)"/>
+  
+  <!-- K - Upper diagonal (thick, goes behind J) -->
+  <path d="M38 95 L38 82 L95 15 L112 15 L112 28 L55 95 Z" fill="url(#grad-light)"/>
+  
+  <!-- K - Upper diagonal outline stroke -->
+  <path d="M95 15 L112 15 L112 28 L107 28 L107 22 L98 22 L52 75 L45 75 L45 88 L38 88 L38 82 L95 15" fill="url(#grad-light)"/>
+  
+  <!-- K - Lower diagonal connecting to bottom -->
+  <path d="M38 105 L38 118 L88 175 L175 175 L175 162 L95 162 L45 105 Z" fill="url(#grad-light)"/>
+  
+  <!-- J - Inner vertical stroke -->
+  <path d="M112 28 L125 28 L125 120 C125 145 105 165 75 165 L75 152 C98 152 112 138 112 120 Z" fill="url(#grad-light)"/>
+  
+  <!-- J - Outer vertical stroke -->  
+  <path d="M138 15 L151 15 L151 120 C151 158 122 185 75 185 L75 172 C115 172 138 150 138 120 Z" fill="url(#grad-light)"/>
+  
+  <!-- J - Top connection bar -->
+  <path d="M112 15 L151 15 L151 28 L112 28 Z" fill="url(#grad-light)"/>
+</svg>
+
